@@ -390,7 +390,7 @@ export type AstTypeReference = {
 	prefixPoint: Token<".">?,
 	name: Token<string>,
 	openParameters: Token<"<">?,
-	parameters: Punctuated<AstType>?,
+	parameters: Punctuated<AstType | AstTypePack>?,
 	closeParameters: Token<">">?,
 }
 
